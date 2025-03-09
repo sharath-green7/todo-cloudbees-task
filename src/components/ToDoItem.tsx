@@ -19,12 +19,7 @@ const ToDoItem = (props: TodoItemInterface) => {
           }
         />
       </div>
-      <div
-        className="item-remove"
-        onClick={() => props.handleTodoRemove(props.todo.id)}
-      >
-        ⨯
-      </div>
+      <button className="button button1" onClick={() => props.handleTodoRemove(props.todo.id)}>Delete</button>
     </div>
   );
 };

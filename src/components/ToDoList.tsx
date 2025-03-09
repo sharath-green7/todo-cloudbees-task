@@ -1,7 +1,9 @@
 import * as React from "react";
 import TodoItem from "./ToDoItem";
-import { TodoListInterface } from "../inteface";
+import { TodoInterface, TodoListInterface } from "../inteface";
+import { useEffect, useState } from "react";
 const ToDoList = (props: TodoListInterface) => {
+  
   return (
     <div className="todo-list">
       <ul>
